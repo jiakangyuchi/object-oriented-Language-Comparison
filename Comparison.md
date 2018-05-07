@@ -131,7 +131,7 @@ Compare Python and Java
     
     python: MultiTasking is a tiny Python library lets you convert your Python methods into asynchronous, non-blocking methods simply by using a decorator.
     
-  *Inheritance / extension 
+  * Inheritance / extension 
   
    Java: everything is an object，and the root of all types is the Object class.
 By extending another class, a class inherits its fields and methods. There are two advantages on extending another class: first, write less code, and secondly, reuse of code makes it easier to debug your program.
@@ -144,7 +144,7 @@ In java, it only supports single extension, which means multiple extension is no
 
 
   * Reflection
-   What reflection abilities are supported?
+    * What reflection abilities are supported?
    Java: Java includes a Reflection API which can be used to inspect a class, fields and methods.
 For the fields, we can only examine the public ones.
 oHow is reflection used?
@@ -171,25 +171,26 @@ oHow is reflection used?
 
 
  * Memory management
-   How is it handled?
+   * How is it handled?
    Java: All Java objects,such as String, Integer are stored in the heap.
    Variables are a reference to the object, and local variables are stored on the stack.
    This heap is divided into two areas. The first is the nursery and second is called the old space. 
    
    python: All objects and data in a program are stored on a private heap managed by the Python interpreter.
    
-   How does it work?
+   * How does it work?
    Java: Objects first enter the nursery when they are instantiated. When the nursery becomes full, the objects are then moved to the old space. When the old space becomes full, the objects are deleted.
    
    python:Python memory manager interacts with the operating system to request and ensure there is enough memory. It then can allocate space for the requested object.
-   Garbage collection?
+   
+ * Garbage collection?
    Java:when objects are not referenced anymore,their memory is freed, which is pretty similar to python.
    Advantage:can handle retain cycle, process regularly, and run on backend
    Disadvantage:cannot determine release time, when GC run, it may cause resources shortage so that we may suspend some threads with lower priority.
    
    python:Handled by an algorithm that utilizes reference counting to determine if an object should be freed.
    
-   Automatic reference counting?
+ * Automatic reference counting?
    Java:No, Java uses the GC instead of reference counting.
    
    python:Yes, it is how Python knows if an object is no longer in use or being referred. 
@@ -197,7 +198,7 @@ oHow is reflection used?
    Advantage:release accurately, and more efficiency because of no backend process.
 
  * Comparisons of references and values
- How are values compared? (i.e. comparing two strings)
+   * How are values compared? (i.e. comparing two strings)
  Java: we use == to compare between primitive types, like int,bool,double, and we use the method .equals() for comparisons between reference types.
 public class CompTest{
     public static void main(String[] args) {
@@ -223,12 +224,13 @@ public class CompTest{
 
 
  * Null/nil references
- which does the language use? (null/nil/etc)
- Java uses the null keyword
+  * which does the language use? (null/nil/etc)
+   Java:Java uses the null keyword
+   
+   python:None keyword, which is an object representing a state of nothing.
  
- python:None keyword, which is an object representing a state of nothing.
+ * Does the language have features for handling null/nil references?
  
- Does the language have features for handling null/nil references?
  Java:Yes, it is the NullPointerException, which will be thrown on any method invocation on a null reference. I think it is not a good way to deal with null values compared to Python, which can limit which variables can be null.
 
  python:Yes, we can use "is" to determine if an object has a state of None.
