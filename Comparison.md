@@ -8,6 +8,13 @@
     
 Compare Python and Java
 
+Group member
+
+* Jiakang Yuchi
+
+* Dongpeng Liu pawprint:dltdc
+
+---
 
 * Language purpose/genesis
   * Why was the language created? 
@@ -67,6 +74,134 @@ Compare Python and Java
     
     Python: Yes, Python allows programmers to define their own types using classes.
   
+* Classes
+
+  * Defining
+
+    Java:
+    ```java
+    class MyClass extends MySuperClass implements YourInterface {
+      ...
+    }
+    ```
+
+    Python 3:
+
+    ```python
+    class DerivedClassName(superClass1, superClass2, superClass3):
+        ...
+    ```
+
+  * Creating new instances
+
+    Java: There are three steps when creating an object from a class −
+
+    Declaration − A variable declaration with a variable name with an object type.
+
+    Instantiation − The 'new' keyword is used to create the object.
+
+    Initialization − The 'new' keyword is followed by a call to a constructor. This call initializes the new object.
+
+    ```java
+     public class Puppy {
+       public Puppy(String name) {
+          // This constructor has one parameter, name.
+          System.out.println("Passed Name is :" + name );
+       }
+
+       public static void main(String []args) {
+          // Following statement would create an object
+          Puppy myPuppy = new Puppy( "tommy" );
+       }
+     }
+    ```
+
+    Python: Class instantiation uses function notation. We can treat the class object as a parameterless function that returns a new instance of the class.
+
+    ```python
+    x = MyClass()
+    ```
+
+  * Constructing/initializing
+
+    Java: Instantiation − The 'new' keyword is used to create the object. Constructing - Java compiler builds a default constructor for that class. Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.
+
+    ```java
+    public class Puppy {
+      //constructors
+      public Puppy()
+      public Puppy(String name)
+    }
+    ```
+
+    python: When a class have a `def __init__()` method, class instantiation automatically invokes this initializing method for the newly-created class instance. So a new, initialized instance can be obtained by `x = MyClass()`.
+
+  * Destructing/de-initializing
+
+    Java: Because Java is a garbage collected language we cannot predict when (or even if) an object will be destroyed. Hence there is no direct equivalent of a destructor. We can use method `public void finalize()` instead.
+
+    python: In Python, destructors are needed much less, because Python has a garbage collector that handles memory management. Python has the destructor concept - the `__del__()` method.
+
+* Instance reference name in data type (class)
+
+  * this? self?
+
+    Java uses this and python uses self for instance reference. Both `Bound Method` and `Unbound Method` are supported in python.
+
+* Properties
+
+  * Getters and setters…write your own or built in?
+
+    Java: write your own getters and setters methods.
+
+    python: We can write own code for setter and getter, or use the properties.
+
+    ```python
+    @property
+    def x(self):
+        return self.__x
+
+    @x.setter
+    def x(self, x):
+      ...
+    ```
+
+  * Backing variables?
+
+    Both Java and Python are supported variables as properties.
+
+  * Computed properties?
+
+    A computed attribute (or "managed attribute") looks like it directly accesses storage, but works like a function. That is, you code a computed attribute without parentheses or arguments, but accessing the attribute causes a function to be executed.
+
+    Java: Yes. When we use a custom getter and/or setter method with a variable, it is a computed property, as opposed to a stored property.
+
+    python: supported.
+    '''python
+    save_me = wgt.color
+    top_edge_color = (255,) + wgt.color[1:]
+    ```
+
+* Interfaces / protocols
+
+  * What does the language support?
+
+    Java: Interfaces. It has static constants and abstract methods. The interface in java is a mechanism to achieve abstraction. There can be only abstract methods in the java interface. It is used to achieve abstraction and multiple inheritance in Java.
+
+    Python: Interfaces are not necessary in Python. This is because Python has proper multiple inheritanc
+
+  * What abilities does it have?
+
+    Java: A very common use of interfaces is for listeners. A listener is an object from a class that implements the required methods for that interface. Interfaces replace multiple inheritance.
+
+    python: More commonly Python coders prefer to use the richer concept known as an "Abstract Base Class" (ABC), which combines an interface with the possibility of having some implementation aspects there too.
+
+  * How is it used?
+
+    Java: Widly used.
+
+    Python: Not common. There are third-party implementations of interfaces for Python (most popular is Zope's, also used in Twisted)
+
 * Inheritance/extension 
   
     Java: everything is an object，and the root of all types is the Object class.
