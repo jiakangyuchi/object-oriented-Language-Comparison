@@ -76,17 +76,17 @@ Compare Python and Java
     python: see the code part.
 
 * Reflection
+  * How is reflection used?
+    
+    See the code part.
+    
   * What reflection abilities are supported?
     
     Java: Java includes a Reflection API which can be used to inspect a class, fields and methods.
     For the fields, we can only examine the public ones.
     
     python: Python has the ability to use reflection to see what type, class, fields, and methods the object has.
-    
-  * How is reflection used?
-    
-    See the code part.
-
+   
 * Memory management
   * How is it handled?
     
