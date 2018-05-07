@@ -76,7 +76,7 @@ Compare Python and Java
     python: see the code part.
 
 * Reflection
-  * How is relection used?
+  * How is reflection used?
     
     See the code part.
     
