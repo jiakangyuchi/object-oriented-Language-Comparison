@@ -103,7 +103,7 @@ Compare Python and Java
         type("Hello World") #type = str
         type(1) #type = int
         type(1.0) #type = float
-    #if an object is an instance of a certain class
+     #if an object is an instance of a certain class
         isinstance("Hello World", str) #isinstance = true
         isinstance(1, int) #isinstance = true
         isinstance(1.0, bool) #isinstance = false, 5.0 is a float
