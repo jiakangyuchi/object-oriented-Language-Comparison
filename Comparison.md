@@ -131,7 +131,7 @@ Compare Python and Java
     
     python: MultiTasking is a tiny Python library lets you convert your Python methods into asynchronous, non-blocking methods simply by using a decorator.
     
-  * Inheritance / extension 
+  * Inheritance  extension 
   
 	Java: everything is an object，and the root of all types is the Object class.
 	By extending another class, a class inherits its fields and methods. There are two advantages on extending another class: first,         write less code, and secondly, reuse of code makes it easier to debug your program.
@@ -236,7 +236,7 @@ Compare Python and Java
    
 	python:None keyword, which is an object representing a state of nothing.
  
- * Does the language have features for handling null/nil references?
+    * Does the language have features for handling null/nil references?
  
 	 Java:Yes, it is the NullPointerException, which will be thrown on any method invocation on a null reference. I think it is not 	a good way to deal with null values compared to Python, which can limit which variables can be null.
 
