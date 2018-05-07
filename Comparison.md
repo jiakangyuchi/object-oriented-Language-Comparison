@@ -8,12 +8,6 @@
     
 Compare Python and Java
 
-Group member
-
-* Jiakang Yuchi
-
-* Dongpeng Liu pawprint:dltdc
-
 ---
 
 * Language purpose/genesis
