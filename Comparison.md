@@ -144,7 +144,7 @@ Compare Python and Java
 
 
   * Reflection
-    * What reflection abilities are supported?
+   * What reflection abilities are supported?
     
 	   Java: Java includes a Reflection API which can be used to inspect a class, fields and methods.
 		For the fields, we can only examine the public ones.
@@ -172,7 +172,7 @@ Compare Python and Java
 
 
   * Memory management
-    * How is it handled?
+   * How is it handled?
     
 	   Java: All Java objects,such as String, Integer are stored in the heap.
 	   Variables are a reference to the object, and local variables are stored on the stack.
