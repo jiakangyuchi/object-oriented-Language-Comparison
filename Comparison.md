@@ -73,10 +73,7 @@ Compare Python and Java
     By extending another class, a class inherits its fields and methods. There are two advantages on extending another class: first,         write less code, and secondly, reuse of code makes it easier to debug your program.
     In java, it only supports single extension, which means multiple extension is not allowed.
 
-    python: class ExtendedClass(ParentClassName):
-      def __init__(self, x, y, z):
-    ParentClassName.__init__(self, x, y) #inheriting from the parent class
-    self.z = z
+    python: see the code part.
 
 * Reflection
   * What reflection abilities are supported?
@@ -88,25 +85,7 @@ Compare Python and Java
     
   * How is reflection used?
     
-    Java: //inspect methods
-      Method[] methods = MyObject.getClass().getMethods();
-    for(Method method : methods){
-        System.out.println("method = " + method.getName());
-    }
-    //inspect fields
-     Field[] fields = MyObject.getClass().getFields();
-      for( field : fields){
-          System.out.println("field = " + field.getName());
-      }
-
-     python: #Using the type() method to check the type
-        type("Hello World") #type = str
-        type(1) #type = int
-        type(1.0) #type = float
-     #if an object is an instance of a certain class
-        isinstance("Hello World", str) #isinstance = true
-        isinstance(1, int) #isinstance = true
-        isinstance(1.0, bool) #isinstance = false, 5.0 is a float
+    See the code part.
 
 * Memory management
   * How is it handled?
@@ -143,25 +122,7 @@ Compare Python and Java
   * How are values compared? (i.e. comparing two strings)
     
     Java: we use == to compare between primitive types, like int,bool,double, and we use the method .equals() for comparisons               between reference types.
-    public class CompTest{
-        public static void main(String[] args) {
-      String s1 = "S1";
-      String s2 = "S2";
-      if(s1.equals(s2)) {
-          System.out.println("String 1 and String 2 are equal");
-      } else {
-          System.out.println("String 1 is not equal to string 2");
-      }
-
-      int i = 0;
-      int j = 0;
-      if(i == j) {
-          System.out.println("i and j are equal");
-      } else {
-          System.out.println("i and j are not equal");
-      }
-        }
-    }
+    see the code part.
 
     python: we can use the == operator to determine if two are equal 
 
