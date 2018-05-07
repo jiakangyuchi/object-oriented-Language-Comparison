@@ -1,3 +1,60 @@
+Inheritance / extension(python):
+class ExtendedClass(ParentClassName):
+    def __init__(self, x, y, z):
+        ParentClassName.__init__(self, x, y) #inheriting from the parent class
+        self.z = z
+________________________________________________________________________________________________________________________________________
+
+How is reflection used?(python):
+#Using the type() method to check the type
+    type("Hello World") #type = str
+    type(1) #type = int
+    type(1.0) #type = float
+#if an object is an instance of a certain class
+    isinstance("Hello World", str) #isinstance = true
+    isinstance(1, int) #isinstance = true
+    isinstance(1.0, bool) #isinstance = false, 5.0 is a float
+        
+_______________________________________________________________________________________________________________________________________
+
+How is reflection used?(Java):
+//inspect methods
+  Method[] methods = MyObject.getClass().getMethods();
+
+    for(Method method : methods){
+        System.out.println("method = " + method.getName());
+    }
+//inspect fields
+ Field[] fields = MyObject.getClass().getFields();
+    for( field : fields){
+        System.out.println("field = " + field.getName());
+    }
+        
+_______________________________________________________________________________________________________________________________________
+
+How are values compared? (Java):
+public class CompTest{
+    public static void main(String[] args) {
+        String s1 = "S1";
+        String s2 = "S2";
+        if(s1.equals(s2)) {
+            System.out.println("String 1 and String 2 are equal");
+        } else {
+            System.out.println("String 1 is not equal to string 2");
+        }
+
+        int i = 0;
+        int j = 0;
+        if(i == j) {
+            System.out.println("i and j are equal");
+        } else {
+            System.out.println("i and j are not equal");
+        }
+    }
+}
+
+_______________________________________________________________________________________________________________________________________
+
 event-listener(python):
 class Event( object ):
     """
